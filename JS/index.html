@@ -3,15 +3,18 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Изменения в HTML</title>
+    <title>Изменения атрибутов</title>
 </head>
 <body>
-    <h1 id="title">Привет, мир!</h1>
-    <button onclick="changeContent()">Изменить текст</button>
+    <img id="image" src="./photo/gift.jpg" alt="Image 1" width="1000px">
+    <button onclick="changeImage()">Изменить изображение</button>
 
     <script>
-        function changeContent() {
-            document.getElementById("title").innerHTML = "Привет, JavaScript!";
+        function changeImage() {
+            document.getElementById("image").scr = 
+            "./photo/gratitude.jpg";
+            document.getElementById("image").alt = "Image 2";
+            document.getElementById("image").width = "900px";
         }
     </script>
 </body>
