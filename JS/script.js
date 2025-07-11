@@ -1,1 +1,3 @@
-alert('Привет из внешнего файла!')
+const title = document.getElementById('title')
+
+console.log(title.innerHTML)
